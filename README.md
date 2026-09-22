@@ -41,6 +41,38 @@ Documentos digitalizados exclusivamente como imagem podem exigir uma etapa adici
 
 Durante os testes, também foram identificados casos em que a estrutura interna do PDF dificultou a leitura do texto pelo PyMuPDF. Em alguns documentos, o texto foi retornado em uma ordem diferente da disposição visual, o que pode impedir a identificação correta das informações.
 
+## Demonstração
+
+Abaixo estão alguns exemplos do funcionamento do programa utilizando documentos de teste.
+
+### Nota fiscal de serviço
+
+**Antes da anonimização**
+
+![NF antes](Imagens/NF%20teste.jpg)
+
+**Depois da anonimização**
+
+![NF depois](Imagens/NF%20teste%20anonimizado.jpg)
+
+### Comprovante bancário
+
+**Antes da anonimização**
+
+![Safra antes](Imagens/Safra%20Teste.jpg)
+
+**Depois da anonimização**
+
+![Safra depois](Imagens/Safra%20Teste%20anonimizado.jpg)
+
+### Criação das pastas
+
+O programa também reproduz a estrutura de diretórios dos arquivos processados.
+
+![Criação das pastas](Imagens/Criacao_pastas.jpg)
+
+![Criação das pastas - resultado](Imagens/Criacao_pastas1.jpg)
+
 ## Testes
 
 Os testes foram realizados utilizando documentos fictícios ou cópias modificadas de documentos utilizados como referência.
