@@ -77,13 +77,11 @@ for arquivos in cwd.rglob("*.pdf"):
         dados_da_operacao = re.search("DADOS DA OPERAÇÃO", texto_pagina)
 
         if dados_da_operacao:
-            print("Comprovante Safra encontrado")
 
             eh_cpf = re.search(r"CPF/CNPJ Favorecido\n\d{3}\.\d{3}\.\d{3}\-\d{2}", texto_pagina)
 
             # Vê se tem um cpf no comprovante Safra
             if eh_cpf:
-                print("Safra encontrado")
 
                 area_favorecido = pymupdf.Rect(39.0, 129.67259216308594, 557.8221435546875, 153.995361328125)
 
