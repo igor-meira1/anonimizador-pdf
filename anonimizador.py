@@ -2,10 +2,6 @@ from pathlib import Path
 import pymupdf
 import re
 
-import sys
-
-print(sys.executable)
-
 cwd = Path(__file__).resolve().parent
 
 excessao_email = {"adm", "financeiro", "administrativo", "executivo"}
@@ -46,7 +42,6 @@ for arquivos in cwd.rglob("*.pdf"):
 
         for bloco in blocos:
             texto = bloco[4]
-            print(bloco)
 
             #NFS-e
             nome_completo = re.findall(r"PACIENTES?: (.*?)DADOS", texto, re.DOTALL)
